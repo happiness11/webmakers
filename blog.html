@@ -2,10 +2,14 @@
 <html>
 <head>
      <meta name="viewport" content="width=device-width, initial-scale=1">
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+     <script src="js/inlineDisqussions.js"></script>
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
      <link rel="stylesheet" type="text/css" href="css/style.css">
+     <link rel="stylesheet" type="text/css" href="inlineDisqussions.css" />
      <link href="https://fonts.googleapis.com/css?family=Germania+One|Monoton|Nosifer|Roboto" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <a href="http://foo.com/bar.html#disqus_thread">Link</a>
  </head>
 <body>
  <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -26,7 +30,7 @@
                  <li><a href="#"><font color="white">Website Design</font></a></li>
                  <li><a href="#"><font color="white">Website Hosting</font></a></li>
                  <li><a href="#"><font color="white">Graphic Design</font></a></li>
-                 <li><a href="blog.html"><font color="white">Blog</font></a></li>
+                 <li><a href="#"><font color="white">Blog</font></a></li>
                  <li><a href="#"><font color="white">Contact</font></a></li>
             </ul>
        </div> 
@@ -139,17 +143,35 @@
           in futurum.</p>
      </div>
      
-     
-     
-     
-     
-    </div>  
-      
+     </div>
+ 
+ 
+ <br>
+ <br>
+     <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+// /*
+// var disqus_config = function () {
+// this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+// this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+// };
+// */
+ (function() { // DON'T EDIT BELOW THIS LINE
+ var d = document, s = d.createElement('script');
+ s.src = 'https://www-webmakers-ng.disqus.com/embed.js';
+ s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+ </script>
+ <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
       
  </div>   
-    
-    
-    
+ <script id="dsq-count-scr" src="//www-webmakers-ng.disqus.com/count.js" async></script>   
 </body>
 <br>
 <br>
